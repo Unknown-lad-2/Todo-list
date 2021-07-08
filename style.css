@@ -17,13 +17,6 @@ body{
     left: 50%;
     transform: translate(-50%,-50%);
     padding: 1.5rem;
-    border-radius: 20px;
-    overflow-y: scroll;
-}
-.project_3 .todo_app:hover{
-    transition: .3s ease-in-out;
-    box-shadow: 5px 5px 20px 30px hsl(212,97%,75%);
-    cursor: pointer;
 }
 .todo_app .search_box{
     text-align: center;
@@ -72,15 +65,17 @@ body{
     list-style: none;
     background: rgb(202, 200, 200);
     margin: .5rem 0;
-    padding: 0 .5rem;
+    padding: 0 .6rem;
     color: #000;
     width: 100%;
     text-shadow: 5px 3px 1px rgba(0, 238, 255, 0.562);
     border-radius: 10px;
 }
 
+.fa{
+    font-size: 18px;
+}
 #list button{
-    padding-top: .5rem;
     float: right;
     background: none;
     height: fit-content;
@@ -111,7 +106,7 @@ body{
 
 @media screen and (max-width: 850px) {
     .project_3 .todo_app{
-        width: 70vw;
+        width: 100%;
         height: 100vh;
     }
     .todo_app .search_box input{
@@ -130,10 +125,6 @@ body{
     }
 }
 @media screen and (max-width: 600px) {
-    .project_3 .todo_app{
-        width: 100vw;
-        height: 100vh;
-    }
     .todo_app .search_box input{
         font-size: 1rem;
     }
